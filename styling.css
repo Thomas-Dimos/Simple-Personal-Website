@@ -1,0 +1,53 @@
+
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+#main::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/skull.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100%;
+    width: 100%;
+    opacity: 0.92;
+    z-index: -1;
+}
+#main > h1{
+    text-align: center;
+    padding-top: 1%;
+    background-color: blue;
+}
+
+.left-menu {
+    border: 2px solid black;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-menu-item {
+    background-color: blue;
+}
+
+
+.left-menu-item >h3{
+    font-size: 1.2vw;
+    background-color: blue;
+}
+
+@media screen and (max-width: 1200px){
+    .left-menu-item >h3 {
+        font-size: 2vw;
+    }
+}

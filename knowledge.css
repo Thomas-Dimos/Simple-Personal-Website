@@ -1,0 +1,56 @@
+
+#title{
+    width: 80vw;
+    text-align: center;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    border-bottom: 2px dotted black;
+}
+
+#programming-languages{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-left: 10%;
+
+}
+
+#stars{
+    height: 45.8vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6%;
+    margin-left: 20%;
+
+}
+
+#skill-title{
+    position: absolute;
+    width: 80vw;
+    text-align: center;
+    margin-top: 30%;
+    padding-top: 1%;
+    border-top: 2px dotted black;
+    
+}
+
+.skills{
+    position: absolute;
+    width: 80vw;
+    margin-top: 37%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+
+.skills h4{
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 1%;
+    box-shadow: 2px 2px 5px 0px rgb(20, 35, 100);
+    background-color: rgb(83, 75, 165);
+}

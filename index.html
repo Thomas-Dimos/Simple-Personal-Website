@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="template.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id ="main">
+        <div class = "left-menu">
+            <div class = "info">
+                <img id = "photo-profile" src="/media/photos/profile.jpg" alt="Photo Profile">
+                <div>
+                    <h2>Thomas Dimos</h2>
+                    <h3>Programmer in Greece</h3>
+                </div>
+            </div>
+            <div class = "left-menu-items">
+                <a id ="home" onclick="return link(event,this.id);" href="" style = "text-decoration: underline;text-decoration-color: rgb(5, 0, 71);text-decoration-thickness: 3px;text-underline-offset: 10px;color: rgb(6, 1, 78);">Home</a>
+                <a id = "knowledge" href="" onclick="return link(event);" style = "margin-top: 30%;">Knowledge</a>
+                <a href="" onclick="return link(event);" style = "margin-top: 30%;">Resume</a>
+                <a id = "contacta" href="" onclick="return link(event);" style = "margin-top: 30%;">Contact</a>
+            </div>
+            <div class = "social-media">
+                Social Media
+                <div onclick= "toggleDropdown();" id = "arrow"> &#9662;</div>
+            </div>
+            <div class = "social-media-border">
+                <div class = "icons" onclick="window.open('https://www.facebook.com/profile.php?id=100025174606172','_blank')">
+                    <img src = "/media/icons/ficon.png" alt = "Facebook icon">
+                </div>
+                <div class = "icons" onclick="window.open('https://www.instagram.com/thomas__dimos/?hl=el','_blank')">
+                    <img src = "/media/icons/instaicon.png" alt = "Instagram icon">
+                </div>
+                <div class = "icons" onclick="window.open('https://github.com/Thomas-Dimos','_blank')">
+                    <img src = "/media/icons/githubicon.png" alt = "Github icon">
+                </div>
+            </div>
+        </div>
+        <div id = "main-page">
+            <img id = "screen" src = "/media/photos/screen.png">
+            <div id = "pc-screen">
+               <span style = "font-size: 20px"> SHORT BIO: <br> </span> 
+                Hello, My name is Thomas Dimos and I am a programmer currently living in Ioannina, Greece.<br>
+                I am a dedicated and hard working software enginneer, willing to accept new challenges,motivated in learning new things,skilled in dealing with problems.
+                <script>document.getElementById("pc-screen").innerHTML = ""</script>
+            </div>
+        </div>
+    
+    </div>
+
+    <script type= "text/javascript" src = "scripts/ToggleDropDown.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type= "text/javascript" src = "scripts/TextWriter.js"></script>
+    <script type = "text/javascript" src = "scripts/Link.js"></script>
+    
+</body>
+
+</html> 
